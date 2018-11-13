@@ -8,7 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import <BurnSoftUniversal/BurnSoftDateTime.h>
-
+#import "GeneralFunctions.h"
 
 
 @interface BurnSoftDateTimeTests : XCTestCase
@@ -16,22 +16,6 @@
 @end
 
 @implementation BurnSoftDateTimeTests
-
-- (void) TestResults:(bool) value OutPut:(NSString *) output
-{
-    NSLog(@"Test Output: %@",output);
-    XCTAssertTrue(value);
-}
--(void) TestResultsHaveValue:(NSString *) value
-{
-    bool bValue = NO;
-    if ([value length] > 0)
-    {
-        bValue = YES;
-    }
-    [self TestResults:bValue OutPut:value];
-}
-    
 - (void)setUp {
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }
@@ -44,21 +28,21 @@
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
     NSString *DateTimeStamp = [BurnSoftDateTime getCurrentDateTime];
-    [self TestResultsHaveValue:DateTimeStamp];
+    [GeneralFunctions TestResultsHaveValue:DateTimeStamp];
 }
 
 -(void)test_formatLongConnectedDateTimeStamp {
     NSString *DateTimeStamplong = [BurnSoftDateTime formatLongConnectedDateTimeStamp];
-    [self TestResultsHaveValue:DateTimeStamplong];
+    [GeneralFunctions TestResultsHaveValue:DateTimeStamplong];
 }
 - (void)test_formatDate
 {
     NSString *newDate = [BurnSoftDateTime formatDate:[NSDate date]];
-    [self TestResultsHaveValue:newDate];
+    [GeneralFunctions TestResultsHaveValue:newDate];
 }
 - (void) test_formatLongConnectedByDateAndTIme {
     NSString *newDate = [BurnSoftDateTime formatLongConnectedByDateAndTIme:[NSDate date]];
-    [self TestResultsHaveValue:newDate];
+    [GeneralFunctions TestResultsHaveValue:newDate];
 }
 - (void)testPerformanceExample {
     // This is an example of a performance test case.

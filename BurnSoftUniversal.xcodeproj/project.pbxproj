@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A51085A1219A4DC8007A1921 /* BurnSoftFileSystemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A51085A0219A4DC8007A1921 /* BurnSoftFileSystemTests.m */; };
+		A51085A4219A4E10007A1921 /* GeneralFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = A51085A3219A4E10007A1921 /* GeneralFunctions.m */; };
 		A5984044219900FC009EBBE5 /* BurnSoftUniversal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A598403A219900FC009EBBE5 /* BurnSoftUniversal.framework */; };
 		A5984049219900FC009EBBE5 /* BurnSoftUniversalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5984048219900FC009EBBE5 /* BurnSoftUniversalTests.m */; };
 		A598404B219900FC009EBBE5 /* BurnSoftUniversal.h in Headers */ = {isa = PBXBuildFile; fileRef = A598403D219900FC009EBBE5 /* BurnSoftUniversal.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -38,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A51085A0219A4DC8007A1921 /* BurnSoftFileSystemTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BurnSoftFileSystemTests.m; sourceTree = "<group>"; };
+		A51085A2219A4E10007A1921 /* GeneralFunctions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneralFunctions.h; sourceTree = "<group>"; };
+		A51085A3219A4E10007A1921 /* GeneralFunctions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneralFunctions.m; sourceTree = "<group>"; };
 		A598403A219900FC009EBBE5 /* BurnSoftUniversal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BurnSoftUniversal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A598403D219900FC009EBBE5 /* BurnSoftUniversal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BurnSoftUniversal.h; sourceTree = "<group>"; };
 		A598403E219900FC009EBBE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -128,6 +133,9 @@
 				A5984048219900FC009EBBE5 /* BurnSoftUniversalTests.m */,
 				A598404A219900FC009EBBE5 /* Info.plist */,
 				A59840592199030D009EBBE5 /* BurnSoftDateTimeTests.m */,
+				A51085A0219A4DC8007A1921 /* BurnSoftFileSystemTests.m */,
+				A51085A2219A4E10007A1921 /* GeneralFunctions.h */,
+				A51085A3219A4E10007A1921 /* GeneralFunctions.m */,
 			);
 			path = BurnSoftUniversalTests;
 			sourceTree = "<group>";
@@ -267,8 +275,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A51085A4219A4E10007A1921 /* GeneralFunctions.m in Sources */,
 				A5984049219900FC009EBBE5 /* BurnSoftUniversalTests.m in Sources */,
 				A598405A2199030D009EBBE5 /* BurnSoftDateTimeTests.m in Sources */,
+				A51085A1219A4DC8007A1921 /* BurnSoftFileSystemTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
