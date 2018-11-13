@@ -72,6 +72,22 @@
     NSString *value = [BurnSoftFileSystem convertBOOLtoString:YES];
     [GeneralFunctions TestResultsHaveValue:value];
 }
+-(void)test_getCertainFilefromPath{
+    bool bAns = NO;
+    NSArray *value = [BurnSoftFileSystem getCertainFilefromPath:TestPath ByExtension:@"log"];
+    for (id object in value)
+    {
+        NSLog(@"File: %@", object);
+    }
+    NSString *countMsg = [NSString stringWithFormat:@"Count In Array : %lu",(unsigned long)[value count]];
+    
+    NSLog(@"%@",countMsg);
+    if ([value count] > 0)
+    {
+        bAns = YES;
+    }
+    [GeneralFunctions TestResults:bAns OutPut:countMsg];
+}
 
 - (void)testPerformanceExample {
     // This is an example of a performance test case.
