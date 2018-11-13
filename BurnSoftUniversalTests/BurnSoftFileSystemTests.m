@@ -9,6 +9,7 @@
 #import <XCTest/XCTest.h>
 #import <BurnSoftUniversal/BurnSoftFileSystem.h>
 #import "GeneralFunctions.h"
+#import <Foundation/Foundation.h>
 
 @interface BurnSoftFileSystemTests : XCTestCase
 {
@@ -27,6 +28,18 @@
     TestFileName = @"test.log";
     NewFileCopy = @"testcopy.log";
     //*ErrorMsg = @"";
+    /*
+    int pid = [[NSProcessInfo processInfo] processIdentifier];
+    NSPipe *pipe = [NSPipe pipe];
+    NSFileHandle *file = pipe.fileHandleForReading;
+    
+    NSTask *task = [NSTask new];
+    task.launchPath = @"/usr/bin/touch";
+    task.arguments = @[@"bar.txt"];
+    task.standardOutput = pipe;
+    
+    [task launch];
+     */
 }
 
 - (void)tearDown {
@@ -88,7 +101,22 @@
     }
     [GeneralFunctions TestResults:bAns OutPut:countMsg];
 }
-
+-(void)test_getCertainFilesFromDocumentsByExtension {
+    bool bAns = NO;
+    NSArray *value = [BurnSoftFileSystem getCertainFilesFromDocumentsByExtension:@"log"];
+    for (id object in value)
+    {
+        NSLog(@"File: %@", object);
+    }
+    NSString *countMsg = [NSString stringWithFormat:@"Count In Array : %lu",(unsigned long)[value count]];
+    //NOTE: This is going off the iOS Directory which currently has nothing in it so zero is pass at this point
+    NSLog(@"%@",countMsg);
+    if ([value count] == 0)
+    {
+        bAns = YES;
+    }
+    [GeneralFunctions TestResults:bAns OutPut:countMsg];
+}
 - (void)testPerformanceExample {
     // This is an example of a performance test case.
     [self measureBlock:^{
