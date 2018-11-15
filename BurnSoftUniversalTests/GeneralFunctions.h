@@ -15,6 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 +(void) TestResultsHaveValue:(NSString *) value;
 +(void) TestResultsHaveValue:(NSString *) value ErrorMessage:(NSString *) errMsg;
 +(void) TestResultsHaveValueGreaterThanZero:(unsigned long) value;
++(void) TestResultsHaveValueGreaterThanZeroDbl:(double) value;
++(void) TestResultsHaveValueGreaterThanZeroInt:(int) value;
++(void) TestResultsHaveValueGreaterThanZeroNSNumber:(NSNumber *) value;
 @end
 
 NS_ASSUME_NONNULL_END

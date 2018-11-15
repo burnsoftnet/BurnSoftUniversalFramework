@@ -47,4 +47,30 @@
     [self TestResults:bValue OutPut:[NSString stringWithFormat:@"%lu", value]];
 }
 
++(void) TestResultsHaveValueGreaterThanZeroNSNumber:(NSNumber *) value
+{
+    bool bValue = NO;
+    if ( value > 0){
+        bValue = YES;
+    }
+    [self TestResults:bValue OutPut:[NSString stringWithFormat:@"%@", value]];
+}
+
++(void) TestResultsHaveValueGreaterThanZeroDbl:(double) value
+{
+    bool bValue = NO;
+    if ( value > 0){
+        bValue = YES;
+    }
+    [self TestResults:bValue OutPut:[NSString stringWithFormat:@"%f", value]];
+}
+
++(void) TestResultsHaveValueGreaterThanZeroInt:(int) value
+{
+    bool bValue = NO;
+    if ( value > 0){
+        bValue = YES;
+    }
+    [self TestResults:bValue OutPut:[NSString stringWithFormat:@"%ul", value]];
+}
 @end

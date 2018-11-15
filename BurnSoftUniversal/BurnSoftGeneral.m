@@ -90,42 +90,7 @@
     return bAns;
 }
 
-#pragma mark Format Date
-/*! @brief Format date to mm/dd/yyyy
-*/
-+(NSString *)formatDate:(NSDate *)date __deprecated_msg("BurnSoftDateTime.formatDate instead")
-{
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateStyle:NSDateFormatterShortStyle];
-    [dateFormatter setDateFormat:@"MM'/'dd'/'yyyy"];
-    NSString *formattedDate = [dateFormatter stringFromDate:date];
-    return formattedDate;
-}
-#pragma mark Format Date and Time Long By Provided DateTime
-/*! @brief Pass a Date and Time Stampe and have it returned in a connected format
-*/
-+(NSString *)formatLongConnectedByDateAndTIme:(NSDate *)mydate __deprecated_msg("BurnSoftDateTime.formatLongConnectedByDateAndTIme instead")
-{
-    NSString *sAns = [NSString new];
-    NSDateFormatter *dateFormatter=[NSDateFormatter new];
-    [dateFormatter setDateFormat:@"yyyy-MM-dd_HH_mm_ss"];
-    //[dateFormatter stringFromDate:[NSDate date]
-    sAns = [NSString stringWithFormat:@"%@",[dateFormatter stringFromDate:mydate]];
-    return sAns;
-}
-#pragma mark Format Date and Time Long By Current DateTime
-/*! @brief  Get the Current Date and Time Stampe and have it returned in a connected format
-*/
-+(NSString *)formatLongConnectedDateTimeStamp __deprecated_msg("BurnSoftDateTime.formatLongConnectedDateTimeStamp instead")
-{
-    NSString *sAns = [NSString new];
-    NSDateFormatter *dateFormatter=[NSDateFormatter new];
-    [dateFormatter setDateFormat:@"yyyy-MM-dd_HH_mm_ss"];
 
-    sAns = [NSString stringWithFormat:@"%@",[dateFormatter stringFromDate:[NSDate date]]];
-            
-    return sAns;
-}
 #pragma mark Convert String to NSNumber
 /*! @brief Convert a string to NSNumber
 */

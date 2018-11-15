@@ -45,7 +45,7 @@
 }
 
 -(void) test_getValueFromLongString{
-    NSString *value = [BurnSoftGeneral getValueFromLongString:@"1 2 3 4 5" Separater:@" " AtIndex:5];
+    NSString *value = [BurnSoftGeneral getValueFromLongString:@"1,2,3,4,5" Separater:@"," AtIndex:4];
     [GeneralFunctions TestResultsHaveValue:value];
 }
 
@@ -54,7 +54,22 @@
     [GeneralFunctions TestResultsHaveValueGreaterThanZero:value];
 }
 
+-(void) test_isNumeric{
+    NSString *myValue = @"4";
+    bool value = [BurnSoftGeneral isNumeric: myValue];
+    [GeneralFunctions TestResults:value OutPut:myValue];
+}
 
+-(void) test_convertToNSNumberByString{
+    NSString *myValue = @"4";
+    NSNumber *value = [BurnSoftGeneral convertToNSNumberByString:myValue];
+    [GeneralFunctions TestResults:value OutPut:myValue];
+}
+
+-(void) test_convertBOOLtoString{
+    NSString *value = [BurnSoftGeneral convertBOOLtoString:YES];
+    [GeneralFunctions TestResultsHaveValue:value];
+}
 
 - (void)testPerformanceExample {
     // This is an example of a performance test case.
