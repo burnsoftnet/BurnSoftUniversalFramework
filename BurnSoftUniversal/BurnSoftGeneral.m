@@ -39,7 +39,7 @@
 /*! @brief This will convert a string into a long value
  */
 +(unsigned long) FCLong:(NSString *) sValue;{
-    NSUInteger uAns = [sValue length];
+    NSUInteger uAns = [sValue longLongValue];
     unsigned long iAns = uAns;
     return iAns;
 }

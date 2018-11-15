@@ -7,6 +7,8 @@
 //
 
 #import <XCTest/XCTest.h>
+#import <BurnSoftUniversal/BurnSoftGeneral.h>
+#import "GeneralFunctions.h"
 
 @interface BurnSoftGeneralTest : XCTestCase
 
@@ -22,10 +24,37 @@
     // Put teardown code here. This method is called after the invocation of each test method in the class.
 }
 
-- (void)testExample {
+- (void)test_FCString {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
+    NSString *value = [BurnSoftGeneral FCString:@"double'qoute'test"];
+    [GeneralFunctions TestResultsHaveValue:value];
 }
+- (void)test_FCStringXML {
+    // This is an example of a functional test case.
+    // Use XCTAssert and related functions to verify your tests produce the correct results.
+    NSString *value = [BurnSoftGeneral FCStringXML:@"XML & Type's Format & stuff"];
+    [GeneralFunctions TestResultsHaveValue:value];
+}
+
+- (void)test_FCLong {
+    // This is an example of a functional test case.
+    // Use XCTAssert and related functions to verify your tests produce the correct results.
+    unsigned long value = [BurnSoftGeneral FCLong:@"1024"];
+    [GeneralFunctions TestResultsHaveValueGreaterThanZero:value];
+}
+
+-(void) test_getValueFromLongString{
+    NSString *value = [BurnSoftGeneral getValueFromLongString:@"1 2 3 4 5" Separater:@" " AtIndex:5];
+    [GeneralFunctions TestResultsHaveValue:value];
+}
+
+-(void) test_CountCharacters{
+    unsigned long value = [BurnSoftGeneral CountCharacters:@"123456789"];
+    [GeneralFunctions TestResultsHaveValueGreaterThanZero:value];
+}
+
+
 
 - (void)testPerformanceExample {
     // This is an example of a performance test case.

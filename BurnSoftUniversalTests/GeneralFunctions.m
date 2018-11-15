@@ -38,4 +38,13 @@
     }
     [self TestResults:bValue OutPut:value];
 }
++(void) TestResultsHaveValueGreaterThanZero:(unsigned long) value
+{
+    bool bValue = NO;
+    if ( value > 0){
+        bValue = YES;
+    }
+    [self TestResults:bValue OutPut:[NSString stringWithFormat:@"%lu", value]];
+}
+
 @end
