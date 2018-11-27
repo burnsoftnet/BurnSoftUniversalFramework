@@ -12,6 +12,7 @@
 #import "BurnSoftGeneral.h"
 #import "BurnSoftFileSystem.h"
 #import "BurnSoftFormFunctions.h"
+#import "DBManager.h"
 
 //! Project version number for BurnSoftUniversal.
 FOUNDATION_EXPORT double BurnSoftUniversalVersionNumber;

@@ -6,6 +6,19 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		A5CC3CD921A3819F009828FE /* BurnSoftUniversal iOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A5CC3CDC21A3819F009828FE /* Build configuration list for PBXAggregateTarget "BurnSoftUniversal iOS" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = "BurnSoftUniversal iOS";
+			productName = "BurnSoftUniversal iOS";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		A51085A1219A4DC8007A1921 /* BurnSoftFileSystemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A51085A0219A4DC8007A1921 /* BurnSoftFileSystemTests.m */; };
 		A51085A4219A4E10007A1921 /* GeneralFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = A51085A3219A4E10007A1921 /* GeneralFunctions.m */; };
@@ -28,7 +41,7 @@
 		A598406A2199089E009EBBE5 /* BurnSoftGeneral.m in Sources */ = {isa = PBXBuildFile; fileRef = A59840622199089E009EBBE5 /* BurnSoftGeneral.m */; };
 		A598406E21991C88009EBBE5 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A598406C21991C88009EBBE5 /* libsqlite3.tbd */; };
 		A598406F21991C88009EBBE5 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A598406D21991C88009EBBE5 /* libsqlite3.0.tbd */; };
-		A598407221991CB4009EBBE5 /* DBManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A598407021991CB4009EBBE5 /* DBManager.h */; };
+		A598407221991CB4009EBBE5 /* DBManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A598407021991CB4009EBBE5 /* DBManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A598407321991CB4009EBBE5 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A598407121991CB4009EBBE5 /* DBManager.m */; };
 /* End PBXBuildFile section */
 
@@ -168,8 +181,8 @@
 				A59840642199089E009EBBE5 /* BurnSoftGeneral.h in Headers */,
 				A59840692199089E009EBBE5 /* BurnSoftMath.h in Headers */,
 				A59840632199089E009EBBE5 /* BurnSoftFormFunctions.h in Headers */,
-				A598407221991CB4009EBBE5 /* DBManager.h in Headers */,
 				A59840662199089E009EBBE5 /* BurnSoftFileSystem.h in Headers */,
+				A598407221991CB4009EBBE5 /* DBManager.h in Headers */,
 				A598405621990166009EBBE5 /* BurnSoftDateTime.h in Headers */,
 				A598404B219900FC009EBBE5 /* BurnSoftUniversal.h in Headers */,
 			);
@@ -229,6 +242,9 @@
 					A5984042219900FC009EBBE5 = {
 						CreatedOnToolsVersion = 10.1;
 					};
+					A5CC3CD921A3819F009828FE = {
+						CreatedOnToolsVersion = 10.1;
+					};
 				};
 			};
 			buildConfigurationList = A5984034219900FC009EBBE5 /* Build configuration list for PBXProject "BurnSoftUniversal" */;
@@ -245,6 +261,7 @@
 			targets = (
 				A5984039219900FC009EBBE5 /* BurnSoftUniversal */,
 				A5984042219900FC009EBBE5 /* BurnSoftUniversalTests */,
+				A5CC3CD921A3819F009828FE /* BurnSoftUniversal iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -435,6 +452,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = BurnSoftUniversal/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +477,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = BurnSoftUniversal/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -505,6 +524,24 @@
 			};
 			name = Release;
 		};
+		A5CC3CDA21A3819F009828FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MF94VYSKL4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A5CC3CDB21A3819F009828FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MF94VYSKL4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -531,6 +568,15 @@
 			buildConfigurations = (
 				A5984052219900FC009EBBE5 /* Debug */,
 				A5984053219900FC009EBBE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5CC3CDC21A3819F009828FE /* Build configuration list for PBXAggregateTarget "BurnSoftUniversal iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5CC3CDA21A3819F009828FE /* Debug */,
+				A5CC3CDB21A3819F009828FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
