@@ -24,7 +24,6 @@
 		A51085A4219A4E10007A1921 /* GeneralFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = A51085A3219A4E10007A1921 /* GeneralFunctions.m */; };
 		A51085A6219A6888007A1921 /* BurnSoftGeneralTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A51085A5219A6888007A1921 /* BurnSoftGeneralTest.m */; };
 		A51085A8219CFF32007A1921 /* BurnSoftMathTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A51085A7219CFF32007A1921 /* BurnSoftMathTests.m */; };
-		A5173729219D165500D330E7 /* DBManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5173728219D165500D330E7 /* DBManagerTests.m */; };
 		A5984044219900FC009EBBE5 /* BurnSoftUniversal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A598403A219900FC009EBBE5 /* BurnSoftUniversal.framework */; };
 		A5984049219900FC009EBBE5 /* BurnSoftUniversalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5984048219900FC009EBBE5 /* BurnSoftUniversalTests.m */; };
 		A598404B219900FC009EBBE5 /* BurnSoftUniversal.h in Headers */ = {isa = PBXBuildFile; fileRef = A598403D219900FC009EBBE5 /* BurnSoftUniversal.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -61,7 +60,6 @@
 		A51085A3219A4E10007A1921 /* GeneralFunctions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneralFunctions.m; sourceTree = "<group>"; };
 		A51085A5219A6888007A1921 /* BurnSoftGeneralTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BurnSoftGeneralTest.m; sourceTree = "<group>"; };
 		A51085A7219CFF32007A1921 /* BurnSoftMathTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BurnSoftMathTests.m; sourceTree = "<group>"; };
-		A5173728219D165500D330E7 /* DBManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBManagerTests.m; sourceTree = "<group>"; };
 		A598403A219900FC009EBBE5 /* BurnSoftUniversal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BurnSoftUniversal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A598403D219900FC009EBBE5 /* BurnSoftUniversal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BurnSoftUniversal.h; sourceTree = "<group>"; };
 		A598403E219900FC009EBBE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -157,7 +155,6 @@
 				A51085A3219A4E10007A1921 /* GeneralFunctions.m */,
 				A51085A5219A6888007A1921 /* BurnSoftGeneralTest.m */,
 				A51085A7219CFF32007A1921 /* BurnSoftMathTests.m */,
-				A5173728219D165500D330E7 /* DBManagerTests.m */,
 			);
 			path = BurnSoftUniversalTests;
 			sourceTree = "<group>";
@@ -301,7 +298,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5173729219D165500D330E7 /* DBManagerTests.m in Sources */,
 				A51085A8219CFF32007A1921 /* BurnSoftMathTests.m in Sources */,
 				A51085A6219A6888007A1921 /* BurnSoftGeneralTest.m in Sources */,
 				A51085A4219A4E10007A1921 /* GeneralFunctions.m in Sources */,
@@ -462,6 +458,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				"VALID_ARCHS[sdk=iphonesimulator*]" = x86_64;
 			};
 			name = Debug;
 		};
@@ -504,6 +501,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.burnsoft.BurnSoftUniversalTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				"VALID_ARCHS[sdk=iphonesimulator*]" = x86_64;
 			};
 			name = Debug;
 		};
@@ -530,6 +528,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MF94VYSKL4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"VALID_ARCHS[sdk=iphonesimulator*]" = x86_64;
 			};
 			name = Debug;
 		};
