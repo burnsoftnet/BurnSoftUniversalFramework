@@ -34,4 +34,6 @@
 #pragma mark Convert Boolean to String
 +(NSString *) convertBOOLtoString:(BOOL) bValue;
 
+#pragma mark Convert String to Boolean
++(BOOL) convertStringToBool:(NSString *) value;
 @end

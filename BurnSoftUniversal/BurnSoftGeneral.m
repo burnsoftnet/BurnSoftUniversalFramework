@@ -117,4 +117,19 @@
     return sAns;
 }
 
+#pragma mark Convert String to Boolean
+/*!
+ @brief: Converts a string to a boolean value, if the string is "yes/Yes/y/Y/YES/TRUE/True/true then it will return YES
+ Otherwise it will return NO/FALSE;
+ */
++(BOOL) convertStringToBool:(NSString *) value
+{
+    BOOL bAns = NO;
+    if ((value == @"yes") || (value==@"y") || (value==@"Yes") || (value==@"Y") || (value==@"true") || (value==@"True") || (value==@"YES")|| (value==@"TRUE"))
+    {
+        bAns = YES;
+    }
+    
+    return bAns;
+}
 @end
