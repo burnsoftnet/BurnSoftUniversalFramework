@@ -13,7 +13,7 @@
 +(void) TestResults:(bool) value OutPut:(NSString *) output
 {
     NSLog(@"Test Output: %@",output);
-    XCTAssertTrue(value);
+    XCTAssert(value);
 }
 +(void) TestResultsHaveValue:(NSString *) value
 {

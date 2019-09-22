@@ -10,7 +10,7 @@
 #import <XCTest/XCTest.h>
 NS_ASSUME_NONNULL_BEGIN
 
-@interface GeneralFunctions : XCTestCase
+@interface GeneralFunctions : NSObject
 +(void) TestResults:(bool) value OutPut:(NSString *) output;
 +(void) TestResultsHaveValue:(NSString *) value;
 +(void) TestResultsHaveValue:(NSString *) value ErrorMessage:(NSString *) errMsg;
