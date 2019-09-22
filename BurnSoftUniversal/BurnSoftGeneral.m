@@ -39,8 +39,7 @@
 /*! @brief This will convert a string into a long value
  */
 +(unsigned long) FCLong:(NSString *) sValue;{
-    NSUInteger uAns = [sValue longLongValue];
-    unsigned long iAns = uAns;
+    unsigned long iAns = [sValue intValue];
     return iAns;
 }
 
@@ -125,7 +124,7 @@
 +(BOOL) convertStringToBool:(NSString *) value
 {
     BOOL bAns = NO;
-    if ((value == @"yes") || (value==@"y") || (value==@"Yes") || (value==@"Y") || (value==@"true") || (value==@"True") || (value==@"YES")|| (value==@"TRUE"))
+    if (([value  isEqual: @"yes"]) || ([value isEqual:@"y"]) || ([value isEqual:@"Yes"]) || ([value isEqual:@"Y"]) || ([value isEqual:@"true"]) || ([value isEqual:@"True"]) || ([value isEqual:@"YES"])|| ([value isEqual:@"TRUE"]))
     {
         bAns = YES;
     }

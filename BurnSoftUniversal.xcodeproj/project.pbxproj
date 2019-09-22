@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
+		A5972D08232ACD3D00E7EF85 /* BurnSoftUniversal macOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A5972D09232ACD3D00E7EF85 /* Build configuration list for PBXAggregateTarget "BurnSoftUniversal macOS" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = "BurnSoftUniversal macOS";
+			productName = "BurnSoftUniversal iOS";
+		};
+		A5972D0C232ACD5500E7EF85 /* BurnSoftUniversal iOS Simulator */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A5972D0D232ACD5500E7EF85 /* Build configuration list for PBXAggregateTarget "BurnSoftUniversal iOS Simulator" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = "BurnSoftUniversal iOS Simulator";
+			productName = "BurnSoftUniversal iOS";
+		};
 		A5CC3CD921A3819F009828FE /* BurnSoftUniversal iOS */ = {
 			isa = PBXAggregateTarget;
 			buildConfigurationList = A5CC3CDC21A3819F009828FE /* Build configuration list for PBXAggregateTarget "BurnSoftUniversal iOS" */;
@@ -42,6 +62,9 @@
 		A598406F21991C88009EBBE5 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A598406D21991C88009EBBE5 /* libsqlite3.0.tbd */; };
 		A598407221991CB4009EBBE5 /* DBManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A598407021991CB4009EBBE5 /* DBManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A598407321991CB4009EBBE5 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A598407121991CB4009EBBE5 /* DBManager.m */; };
+		A5BA8B5B2337B752002D17E0 /* BurnSoftUniversalMacOs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BA8B522337B752002D17E0 /* BurnSoftUniversalMacOs.framework */; };
+		A5BA8B602337B752002D17E0 /* BurnSoftUniversalMacOsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BA8B5F2337B752002D17E0 /* BurnSoftUniversalMacOsTests.m */; };
+		A5BA8B622337B752002D17E0 /* BurnSoftUniversalMacOs.h in Headers */ = {isa = PBXBuildFile; fileRef = A5BA8B542337B752002D17E0 /* BurnSoftUniversalMacOs.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +74,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = A5984039219900FC009EBBE5;
 			remoteInfo = BurnSoftUniversal;
+		};
+		A5BA8B5C2337B752002D17E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5984031219900FC009EBBE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5BA8B512337B752002D17E0;
+			remoteInfo = BurnSoftUniversalMacOs;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -81,6 +111,12 @@
 		A598406D21991C88009EBBE5 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		A598407021991CB4009EBBE5 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
 		A598407121991CB4009EBBE5 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		A5BA8B522337B752002D17E0 /* BurnSoftUniversalMacOs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BurnSoftUniversalMacOs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5BA8B542337B752002D17E0 /* BurnSoftUniversalMacOs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BurnSoftUniversalMacOs.h; sourceTree = "<group>"; };
+		A5BA8B552337B752002D17E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5BA8B5A2337B752002D17E0 /* BurnSoftUniversalMacOsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BurnSoftUniversalMacOsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5BA8B5F2337B752002D17E0 /* BurnSoftUniversalMacOsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BurnSoftUniversalMacOsTests.m; sourceTree = "<group>"; };
+		A5BA8B612337B752002D17E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +137,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A5BA8B4F2337B752002D17E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5BA8B572337B752002D17E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5BA8B5B2337B752002D17E0 /* BurnSoftUniversalMacOs.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -109,6 +160,8 @@
 			children = (
 				A598403C219900FC009EBBE5 /* BurnSoftUniversal */,
 				A5984047219900FC009EBBE5 /* BurnSoftUniversalTests */,
+				A5BA8B532337B752002D17E0 /* BurnSoftUniversalMacOs */,
+				A5BA8B5E2337B752002D17E0 /* BurnSoftUniversalMacOsTests */,
 				A598403B219900FC009EBBE5 /* Products */,
 				A598406B21991C88009EBBE5 /* Frameworks */,
 			);
@@ -119,6 +172,8 @@
 			children = (
 				A598403A219900FC009EBBE5 /* BurnSoftUniversal.framework */,
 				A5984043219900FC009EBBE5 /* BurnSoftUniversalTests.xctest */,
+				A5BA8B522337B752002D17E0 /* BurnSoftUniversalMacOs.framework */,
+				A5BA8B5A2337B752002D17E0 /* BurnSoftUniversalMacOsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,6 +223,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A5BA8B532337B752002D17E0 /* BurnSoftUniversalMacOs */ = {
+			isa = PBXGroup;
+			children = (
+				A5BA8B542337B752002D17E0 /* BurnSoftUniversalMacOs.h */,
+				A5BA8B552337B752002D17E0 /* Info.plist */,
+			);
+			path = BurnSoftUniversalMacOs;
+			sourceTree = "<group>";
+		};
+		A5BA8B5E2337B752002D17E0 /* BurnSoftUniversalMacOsTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5BA8B5F2337B752002D17E0 /* BurnSoftUniversalMacOsTests.m */,
+				A5BA8B612337B752002D17E0 /* Info.plist */,
+			);
+			path = BurnSoftUniversalMacOsTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -182,6 +255,14 @@
 				A598407221991CB4009EBBE5 /* DBManager.h in Headers */,
 				A598405621990166009EBBE5 /* BurnSoftDateTime.h in Headers */,
 				A598404B219900FC009EBBE5 /* BurnSoftUniversal.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5BA8B4D2337B752002D17E0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5BA8B622337B752002D17E0 /* BurnSoftUniversalMacOs.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +305,42 @@
 			productReference = A5984043219900FC009EBBE5 /* BurnSoftUniversalTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		A5BA8B512337B752002D17E0 /* BurnSoftUniversalMacOs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5BA8B672337B752002D17E0 /* Build configuration list for PBXNativeTarget "BurnSoftUniversalMacOs" */;
+			buildPhases = (
+				A5BA8B4D2337B752002D17E0 /* Headers */,
+				A5BA8B4E2337B752002D17E0 /* Sources */,
+				A5BA8B4F2337B752002D17E0 /* Frameworks */,
+				A5BA8B502337B752002D17E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BurnSoftUniversalMacOs;
+			productName = BurnSoftUniversalMacOs;
+			productReference = A5BA8B522337B752002D17E0 /* BurnSoftUniversalMacOs.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A5BA8B592337B752002D17E0 /* BurnSoftUniversalMacOsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5BA8B682337B752002D17E0 /* Build configuration list for PBXNativeTarget "BurnSoftUniversalMacOsTests" */;
+			buildPhases = (
+				A5BA8B562337B752002D17E0 /* Sources */,
+				A5BA8B572337B752002D17E0 /* Frameworks */,
+				A5BA8B582337B752002D17E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5BA8B5D2337B752002D17E0 /* PBXTargetDependency */,
+			);
+			name = BurnSoftUniversalMacOsTests;
+			productName = BurnSoftUniversalMacOsTests;
+			productReference = A5BA8B5A2337B752002D17E0 /* BurnSoftUniversalMacOsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -238,6 +355,12 @@
 					};
 					A5984042219900FC009EBBE5 = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					A5BA8B512337B752002D17E0 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					A5BA8B592337B752002D17E0 = {
+						CreatedOnToolsVersion = 11.0;
 					};
 					A5CC3CD921A3819F009828FE = {
 						CreatedOnToolsVersion = 10.1;
@@ -260,6 +383,10 @@
 				A5984039219900FC009EBBE5 /* BurnSoftUniversal */,
 				A5984042219900FC009EBBE5 /* BurnSoftUniversalTests */,
 				A5CC3CD921A3819F009828FE /* BurnSoftUniversal iOS */,
+				A5972D08232ACD3D00E7EF85 /* BurnSoftUniversal macOS */,
+				A5972D0C232ACD5500E7EF85 /* BurnSoftUniversal iOS Simulator */,
+				A5BA8B512337B752002D17E0 /* BurnSoftUniversalMacOs */,
+				A5BA8B592337B752002D17E0 /* BurnSoftUniversalMacOsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -273,6 +400,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A5984041219900FC009EBBE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5BA8B502337B752002D17E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5BA8B582337B752002D17E0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -308,6 +449,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A5BA8B4E2337B752002D17E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5BA8B562337B752002D17E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5BA8B602337B752002D17E0 /* BurnSoftUniversalMacOsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -316,9 +472,64 @@
 			target = A5984039219900FC009EBBE5 /* BurnSoftUniversal */;
 			targetProxy = A5984045219900FC009EBBE5 /* PBXContainerItemProxy */;
 		};
+		A5BA8B5D2337B752002D17E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5BA8B512337B752002D17E0 /* BurnSoftUniversalMacOs */;
+			targetProxy = A5BA8B5C2337B752002D17E0 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		A5972D0A232ACD3D00E7EF85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MF94VYSKL4;
+				IPHONEOS_DEPLOYMENT_TARGET = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
+				"VALID_ARCHS[sdk=macosx*]" = x86_64;
+			};
+			name = Debug;
+		};
+		A5972D0B232ACD3D00E7EF85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MF94VYSKL4;
+				IPHONEOS_DEPLOYMENT_TARGET = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
+				"VALID_ARCHS[sdk=macosx*]" = x86_64;
+			};
+			name = Release;
+		};
+		A5972D0E232ACD5500E7EF85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MF94VYSKL4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = x86_64;
+				"VALID_ARCHS[sdk=iphonesimulator*]" = x86_64;
+			};
+			name = Debug;
+		};
+		A5972D0F232ACD5500E7EF85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MF94VYSKL4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = x86_64;
+				"VALID_ARCHS[sdk=iphonesimulator*]" = x86_64;
+			};
+			name = Release;
+		};
 		A598404C219900FC009EBBE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -354,7 +565,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -372,6 +583,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -428,6 +640,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -440,13 +653,16 @@
 		A598404F219900FC009EBBE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULE_DEBUGGING = NO;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = MF94VYSKL4;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				INFOPLIST_FILE = BurnSoftUniversal/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -455,6 +671,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = net.burnsoft.BurnSoftUniversal;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -466,6 +683,7 @@
 		A5984050219900FC009EBBE5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULE_DEBUGGING = NO;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -473,6 +691,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				INFOPLIST_FILE = BurnSoftUniversal/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -481,10 +700,13 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = net.burnsoft.BurnSoftUniversal;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				"VALID_ARCHS[sdk=iphoneos*]" = "arm64 arm64e armv7 armv7s";
+				"VALID_ARCHS[sdk=macosx*]" = "arm64 arm64e armv7 armv7s";
 			};
 			name = Release;
 		};
@@ -520,6 +742,93 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.burnsoft.BurnSoftUniversalTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				"VALID_ARCHS[sdk=iphonesimulator*]" = "arm64 arm64e armv7 armv7s x86_64";
+			};
+			name = Release;
+		};
+		A5BA8B632337B752002D17E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MF94VYSKL4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BurnSoftUniversalMacOs/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.burnsoft.BurnSoftUniversalMacOs;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A5BA8B642337B752002D17E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MF94VYSKL4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BurnSoftUniversalMacOs/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.burnsoft.BurnSoftUniversalMacOs;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A5BA8B652337B752002D17E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = MF94VYSKL4;
+				INFOPLIST_FILE = BurnSoftUniversalMacOsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.burnsoft.BurnSoftUniversalMacOsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A5BA8B662337B752002D17E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MF94VYSKL4;
+				INFOPLIST_FILE = BurnSoftUniversalMacOsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.burnsoft.BurnSoftUniversalMacOsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -529,7 +838,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MF94VYSKL4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"VALID_ARCHS[sdk=iphonesimulator*]" = x86_64;
+				"VALID_ARCHS[sdk=iphoneos*]" = x86_64;
 			};
 			name = Debug;
 		};
@@ -539,12 +848,31 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MF94VYSKL4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"VALID_ARCHS[sdk=iphoneos*]" = "arm64 arm64e armv7 armv7s";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A5972D09232ACD3D00E7EF85 /* Build configuration list for PBXAggregateTarget "BurnSoftUniversal macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5972D0A232ACD3D00E7EF85 /* Debug */,
+				A5972D0B232ACD3D00E7EF85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5972D0D232ACD5500E7EF85 /* Build configuration list for PBXAggregateTarget "BurnSoftUniversal iOS Simulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5972D0E232ACD5500E7EF85 /* Debug */,
+				A5972D0F232ACD5500E7EF85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A5984034219900FC009EBBE5 /* Build configuration list for PBXProject "BurnSoftUniversal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -568,6 +896,24 @@
 			buildConfigurations = (
 				A5984052219900FC009EBBE5 /* Debug */,
 				A5984053219900FC009EBBE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5BA8B672337B752002D17E0 /* Build configuration list for PBXNativeTarget "BurnSoftUniversalMacOs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5BA8B632337B752002D17E0 /* Debug */,
+				A5BA8B642337B752002D17E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5BA8B682337B752002D17E0 /* Build configuration list for PBXNativeTarget "BurnSoftUniversalMacOsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5BA8B652337B752002D17E0 /* Debug */,
+				A5BA8B662337B752002D17E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
