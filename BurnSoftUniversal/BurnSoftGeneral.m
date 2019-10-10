@@ -56,7 +56,7 @@
 +(NSString *)getValueFromLongString:(NSString *)sValue Separater:(NSString *)mySeparater AtIndex:(NSInteger) myIndex
 {
     NSString *sAns = [NSString new];
-    NSArray *myArray = [sValue componentsSeparatedByString:mySeparater];
+    NSArray *myArray = [sValue (componentsSeparatedByString):mySeparater];
     sAns = [myArray objectAtIndex:myIndex];
     return sAns;
 }
